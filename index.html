@@ -2,11 +2,79 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>测试页面</title>
+    <title>科技感首页</title>
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #64ffda;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .tech-text {
+            border-left: 3px solid #64ffda;
+            padding-left: 20px;
+            margin: 20px 0;
+            animation: slideIn 1s ease-out;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #64ffda 0%, transparent 100%);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎来到测试页面</h1>
-    <p>这是一个简单的段落文本。</p>
-    <p>用于测试的第二段文字。</p>
+    <div class="container">
+        <h1>未来科技</h1>
+        <div class="tech-text">
+            <p>探索科技的无限可能，创造数字化未来。</p>
+        </div>
+        <div class="highlight">
+            <p>让创新引领未来，用科技改变世界。</p>
+        </div>
+        <div class="tech-text">
+            <p>连接、创新、突破，构建智能新纪元。</p>
+        </div>
+    </div>
 </body>
 </html>
